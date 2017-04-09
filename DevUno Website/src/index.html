@@ -8,11 +8,14 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
 
-    <header class="mainHeader">
+    <header id="mainHeader">
         <!-- Header Image inside div -->
         <div class="headerImage">
-            <img class="headerLogo"src="Images/dev_noName.png" alt="">
+            <img class="headerLogoLight"src="Images/dev_noName.png" alt="">
+            <img class="headerLogoDark" src="Images/dev_noName_dark.png" alt="">
         </div>
+
+        <button onclick="changeHeaderColor" id="themeButton">THIS IS A button</button>
 
         <hr>
         <!-- Header Tabs  -->
@@ -24,4 +27,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
+
+    <script src="themeswitcher.js"type="text/javascript">
+    </script>
 </html>
