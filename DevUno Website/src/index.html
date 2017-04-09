@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>DevUno - Home</title>
         <link rel="stylesheet" href="home.css" type="text/css">
+        <script src="themeswitcher.js"type="text/javascript"></script>
+
         <!-- Font from Google Fonts, Raleway -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
@@ -11,23 +13,20 @@
     <header id="mainHeader">
         <!-- Header Image inside div -->
         <div class="headerImage">
-            <img class="headerLogoLight"src="Images/dev_noName.png" alt="">
-            <img class="headerLogoDark" src="Images/dev_noName_dark.png" alt="">
+            <img id="headerLogoLight"src="Images/dev_noName.png" alt="">
+            <img id="headerLogoDark" src="Images/dev_noName_dark.png" alt="">
         </div>
 
-        <button onclick="changeHeaderColor" id="themeButton">THIS IS A button</button>
+        <button onclick="themeSwitch()" id="themeButton">THIS IS A button</button>
 
-        <hr>
+        <hr id="hrBreak">
         <!-- Header Tabs  -->
         <ul class="headerTabs">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">About the Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a id="homeLink" href="index.html">Home</a></li>
+            <li><a id="webdevLink" href="#">Web Development</a></li>
+            <li><a id="graphicdesignLink" href="#">Graphic Design</a></li>
+            <li><a id="aboutLink" href="#">About the Team</a></li>
+            <li><a  id="contactLink" href="#">Contact</a></li>
         </ul>
     </header>
-
-    <script src="themeswitcher.js"type="text/javascript">
-    </script>
 </html>

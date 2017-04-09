@@ -6,7 +6,7 @@ html{
 
 /*This is the section for the Header elements*/
 #mainHeader{
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     left: 0px;
     top: 0px;
     position: fixed;
@@ -21,14 +21,14 @@ html{
     width: 10%;
     height: 100px;
 }
-.headerLogoLight{
+#headerLogoLight{
     width: 150px;
     top: 20px;
     position: absolute;
     opacity: 100;
 }
 
-.headerLogoDark{
+#headerLogoDark{
     width: 150px;
     top: 20px;
     position: absolute;
@@ -47,7 +47,7 @@ hr{
     top: -40px;
 
     border-top: 1px solid;
-    border-top-color: rgb(215, 215, 215);
+    border-top-color: #d7d7d7;
 }
 
 .headerTabs{
@@ -70,7 +70,7 @@ li a{
     font-weight: 100;
     font-family: Raleway, sans-serif;
     text-decoration: none;
-    color: rgb(42, 43, 50);
+    color: #2a2b32;
 
     border-bottom: 1px solid;
     border-bottom-width: 1px;
@@ -78,6 +78,7 @@ li a{
 
     transition: border-bottom-color .4s;
 }
+
 li a:hover{
     border-bottom-color: rgb(160, 160, 160);
 }
