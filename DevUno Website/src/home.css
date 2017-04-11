@@ -26,6 +26,8 @@ html{
     top: 20px;
     position: absolute;
     opacity: 100;
+
+    transition: opacity .4s;
 }
 
 #headerLogoDark{
@@ -33,6 +35,8 @@ html{
     top: 20px;
     position: absolute;
     opacity: 0;
+
+    transition: opacity .4s;
 }
 
 #themeButton{
@@ -48,6 +52,8 @@ hr{
 
     border-top: 1px solid;
     border-top-color: #d7d7d7;
+
+    transition: border-top-color .4s;
 }
 
 .headerTabs{
@@ -75,10 +81,30 @@ li a{
     border-bottom: 1px solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(215, 215, 215);
-
-    transition: border-bottom-color .4s;
 }
 
 li a:hover{
     border-bottom-color: rgb(160, 160, 160);
+}
+
+/*Delaying the transition time for each link for a smooth effect*/
+#homeLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s,  color .1s;
+}
+#webdevLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .2s;
+}
+#graphicdesignLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .3s;
+}
+#aboutLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .4s;
+}
+#contactLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .5s;
 }
