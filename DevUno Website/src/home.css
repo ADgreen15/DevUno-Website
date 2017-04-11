@@ -29,7 +29,6 @@ html{
 
     transition: opacity .4s;
 }
-
 #headerLogoDark{
     width: 150px;
     top: 20px;
@@ -39,10 +38,50 @@ html{
     transition: opacity .4s;
 }
 
+/*This all relates to the themeSwitchSection div in the HTML*/
 #themeButton{
+    /*This is the div*/
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 10%;
+    margin-right: 20px;
+    padding-bottom: 6px;
+    height: 28px;
+    width: 28px;
+    opacity: 100;
+    z-index: 1;
+    border-bottom: 1px solid;
+    border-bottom-color: #d7d7d7;
+
+    transition: opacity .2s, border-bottom-color .4s;
+}
+#themeButtonIMG{
+    /*This is the image inside the div*/
+    height: 28px;
+    width: 28px;
+    opacity: 100;
+    z-index: 0;
+
+    transition: opacity .2s;
+
+}
+#themeButton:hover{
+    /*Setting controls for the hover action when hovering over the div*/
+    cursor: pointer;
+    border-bottom-color: #909396;
+}
+#themeButton2{
+    /*Secondary image for night mode*/
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    margin-right: 20px;
+    height: 28px;
+    width: 28px;
+    opacity: 0;
+    z-index: 0;
+
+    transition: opacity .2s;
 }
 
 hr{
@@ -56,6 +95,7 @@ hr{
     transition: border-top-color .4s;
 }
 
+/*This section relates to the tabs*/
 .headerTabs{
     position: relative;
     text-align: center;
@@ -80,14 +120,12 @@ li a{
 
     border-bottom: 1px solid;
     border-bottom-width: 1px;
-    border-bottom-color: rgb(215, 215, 215);
+    border-bottom-color: #d7d7d7;
 }
-
 li a:hover{
     border-bottom-color: rgb(160, 160, 160);
 }
-
-/*Delaying the transition time for each link for a smooth effect*/
+    /*Delaying the transition time for each link for a smooth effect*/
 #homeLink{
     color: #2a2b32;
     transition: border-bottom-color .2s,  color .1s;

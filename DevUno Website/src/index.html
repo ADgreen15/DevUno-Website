@@ -6,21 +6,29 @@
         <link rel="stylesheet" href="home.css" type="text/css">
         <script src="themeswitcher.js"type="text/javascript"></script>
 
-        <!-- Font from Google Fonts, Raleway -->
+            <!-- Font from Google Fonts, Raleway -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
 
     <header id="mainHeader">
-        <!-- Header Image inside div -->
+            <!-- Header Image inside div -->
         <div class="headerImage">
             <img id="headerLogoLight"src="Images/dev_noName.png" alt="">
             <img id="headerLogoDark" src="Images/dev_noName_dark.png" alt="">
         </div>
 
-        <button onclick="themeSwitch()" id="themeButton" value="on">THIS IS A button</button>
+        <div id="themeSwitchSection">
+                <!-- This div has a id:themeButton performing the Javascript function -->
+            <div src="Images/moonicon.png"onclick="themeSwitch()" id="themeButton" value="on">
+                <img id="themeButtonIMG" src="Images/moonicon.png" alt="">
+            </div>
+                <!-- This div serves as a display for night mode, doesnt actually do anything. The function is only controlled by the id:themeButton -->
+            <img src="Images/moonicon2.png" id="themeButton2"></img>
+        </div>
 
         <hr id="hrBreak">
-        <!-- Header Tabs  -->
+
+            <!-- Header Tabs  -->
         <ul class="headerTabs">
             <li><a id="homeLink" href="index.html">Home</a></li>
             <li><a id="webdevLink" href="#">Web Development</a></li>

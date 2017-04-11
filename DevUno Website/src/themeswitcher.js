@@ -15,9 +15,14 @@ function themeSwitch(){
         document.getElementById('aboutLink').style.color = '#e0f2f2';
         document.getElementById('contactLink').style.color = '#e0f2f2';
 
+    //changing border color for button
+        document.getElementById('themeButton').style.color = '#d7d7d7';
+
     //changing logo opacity
         document.getElementById('headerLogoLight').style.opacity = '0';
         document.getElementById('headerLogoDark').style.opacity = '100';
+        document.getElementById('themeButtonIMG').style.opacity = '0';
+        document.getElementById('themeButton2').style.opacity = '100';
 
     //add elements that need theme changing here
 
@@ -40,13 +45,18 @@ else{
         document.getElementById('aboutLink').style.color = '#2a2b32';
         document.getElementById('contactLink').style.color = '#2a2b32';
 
-    //changing logo opacity
+    //changing logo and night mode opacity
         document.getElementById('headerLogoLight').style.opacity = '100';
         document.getElementById('headerLogoDark').style.opacity = '0';
+        document.getElementById('themeButton').style.opacity = '100';
+        document.getElementById('themeButtonIMG').style.opacity = '100';
+        document.getElementById('themeButton2').style.opacity = '0';
+
 
     //add elements that need theme changing here
 
 //turns the value of the button back to on
     document.getElementById('themeButton').value = 'on';
     }
+
 }
