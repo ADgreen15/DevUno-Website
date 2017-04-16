@@ -1,17 +1,18 @@
 html{
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgb(68, 121, 108);
+    background-color: rgb(135, 226, 203);
 }
 
 /*This is the section for the Header elements*/
-.mainHeader{
-    background-color: rgb(242, 242, 242);
+#mainHeader{
+    background-color: #f2f2f2;
     left: 0px;
     top: 0px;
     position: fixed;
     width: 100%;
-    height: 75px;
+    height: 125px;
+    transition: background-color .8s;
 }
 .headerImage{
     display: block;
@@ -20,18 +21,128 @@ html{
     width: 10%;
     height: 100px;
 }
-.headerLogo{
+#headerLogoLight{
     width: 150px;
     top: 20px;
-    position: relative;
+    position: absolute;
+    opacity: 100;
+
+    transition: opacity .4s;
 }
+#headerLogoDark{
+    width: 150px;
+    top: 20px;
+    position: absolute;
+    opacity: 0;
+
+    transition: opacity .4s;
+}
+
+/*This all relates to the themeSwitchSection div in the HTML*/
+#themeButton{
+    /*This is the div*/
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    margin-right: 20px;
+    padding-bottom: 6px;
+    height: 28px;
+    width: 28px;
+    opacity: 100;
+    z-index: 1;
+    border-bottom: 1px solid;
+    border-bottom-color: #d7d7d7;
+
+    transition: opacity .2s, border-bottom-color .4s;
+}
+#themeButtonIMG{
+    /*This is the image inside the div*/
+    height: 28px;
+    width: 28px;
+    opacity: 100;
+    z-index: 0;
+
+    transition: opacity .2s;
+
+}
+#themeButton:hover{
+    /*Setting controls for the hover action when hovering over the div*/
+    cursor: pointer;
+    border-bottom-color: #909396;
+}
+#themeButton2{
+    /*Secondary image for night mode*/
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    margin-right: 20px;
+    height: 28px;
+    width: 28px;
+    opacity: 0;
+    z-index: 0;
+
+    transition: opacity .2s;
+}
+
+hr{
+    width: 80%;
+    position: relative;
+    top: -40px;
+
+    border-top: 1px solid;
+    border-top-color: #d7d7d7;
+
+    transition: border-top-color .4s;
+}
+
+/*This section relates to the tabs*/
 .headerTabs{
     position: relative;
     text-align: center;
+    top: -40px;
 }
-
 li{
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
+}
+li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 14px;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    color: #2a2b32;
+
+    border-bottom: 1px solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #d7d7d7;
+}
+li a:hover{
+    border-bottom-color: rgb(160, 160, 160);
+}
+    /*Delaying the transition time for each link for a smooth effect*/
+#homeLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s,  color .1s;
+}
+#webdevLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .2s;
+}
+#graphicdesignLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .3s;
+}
+#aboutLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .4s;
+}
+#contactLink{
+    color: #2a2b32;
+    transition: border-bottom-color .2s, color .5s;
 }
