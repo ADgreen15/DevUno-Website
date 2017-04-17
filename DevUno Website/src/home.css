@@ -1,7 +1,9 @@
-html{
+#index1{
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgb(135, 226, 203);
+    background-color: #f2f2f2;
+
+    transition: background-color .8s;
 }
 
 /*This is the section for the Header elements*/
@@ -125,6 +127,7 @@ li a{
 li a:hover{
     border-bottom-color: rgb(160, 160, 160);
 }
+
     /*Delaying the transition time for each link for a smooth effect*/
 #homeLink{
     color: #2a2b32;
@@ -145,4 +148,59 @@ li a:hover{
 #contactLink{
     color: #2a2b32;
     transition: border-bottom-color .2s, color .5s;
+}
+
+    /*Working with the first image transitions and the contents within this first page section*/
+#gradient1{
+    width: 100%;
+    position: absolute;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+
+    opacity: 100;
+
+    transition: opacity .8s;
+}
+#gradient2{
+    width: 100%;
+    position: absolute;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+
+    opacity: 0;
+
+    transition: opacity .8s;
+}
+#welcomeMessage{
+    position: absolute;
+    width: 100%;
+    top: 358px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    letter-spacing: 1px;
+    color: #3e3e3e;
+
+    transition: color .5s;
+}
+
+#welcomeMessageh2{
+    position: absolute;
+    width: 100%;
+    top:410px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    letter-spacing: 2px;
+    color: #3e3e3e;
+
+    transition: color .3s;
 }

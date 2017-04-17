@@ -2,8 +2,9 @@ function themeSwitch(){
 
     if (document.getElementById('themeButton').value == "on") {
 
-    //changing header background color
+    //changing header background color and html background color
         document.getElementById('mainHeader').style.backgroundColor = '#232a32';
+        document.getElementById('index1').style.backgroundColor = '#232a32';
 
     //changing hr color
         document.getElementById('hrBreak').style.borderTopColor = '#323232';
@@ -26,6 +27,14 @@ function themeSwitch(){
 
     //add elements that need theme changing here
 
+    //adding gradient1 id and gradient2 id transition
+        document.getElementById('gradient1').style.opacity = '0';
+        document.getElementById('gradient2').style.opacity = '100';
+
+    //changing color of welcomeMessage text
+        document.getElementById('welcomeMessage').style.color = '#e0f2f2';
+        document.getElementById('welcomeMessageh2').style.color = '#9babab';
+
 //turns the value of the button to off
     document.getElementById('themeButton').value = 'off'
     }
@@ -34,6 +43,8 @@ else{
 
     //changing header background color
         document.getElementById('mainHeader').style.backgroundColor = '#f2f2f2';
+        document.getElementById('index1').style.backgroundColor = '#f2f2f2';
+
 
     //changing hr color
         document.getElementById('hrBreak').style.borderTopColor = '#d7d7d7';
@@ -54,6 +65,15 @@ else{
 
 
     //add elements that need theme changing here
+
+    //adding gradient1 id and gradient2 id transition
+        document.getElementById('gradient1').style.opacity = '100';
+        document.getElementById('gradient2').style.opacity = '0';
+
+        //changing color of welcomeMessage text
+            document.getElementById('welcomeMessage').style.color = '#3e3e3e';
+            document.getElementById('welcomeMessageh2').style.color = '#3e3e3e';
+
 
 //turns the value of the button back to on
     document.getElementById('themeButton').value = 'on';
