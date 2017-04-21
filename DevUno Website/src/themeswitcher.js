@@ -8,6 +8,8 @@ function themeSwitch(){
 
     //changing hr color
         document.getElementById('hrBreak').style.borderTopColor = '#323232';
+        document.getElementById('hrBreak').style.borderColor = '#919191';
+
 
     //changing the color of the links when pressed
         document.getElementById('homeLink').style.color = '#e0f2f2';
@@ -48,6 +50,8 @@ else{
 
     //changing hr color
         document.getElementById('hrBreak').style.borderTopColor = '#d7d7d7';
+        document.getElementById('hrBreak').style.borderColor = '#d7d7d7';
+
 
     //changing the color of the links when pressed
         document.getElementById('homeLink').style.color = '#2a2b32';
