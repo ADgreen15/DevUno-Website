@@ -16,11 +16,19 @@
     height: 125px;
     transition: background-color .8s;
 }
+#imageLink{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 10px;
+    z-index: 1;
+}
+
 .headerImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 150px;
     height: 100px;
 }
 #headerLogoLight{
@@ -183,7 +191,7 @@ li a:hover{
     font-size: 35px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
-    z-index: 1;
+    z-index: -1;
     letter-spacing: 1px;
     color: #3e3e3e;
 
@@ -198,7 +206,7 @@ li a:hover{
     font-size: 15px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
-    z-index: 1;
+    z-index: -1;
     letter-spacing: 2px;
     color: #3e3e3e;
 
