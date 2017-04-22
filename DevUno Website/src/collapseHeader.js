@@ -6,7 +6,7 @@ function yScroll(){
     headerLinks = document.getElementById('headerTabs');
     hrborder = document.getElementById('hrBreak');
 
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 150) {
         pagetop.style.height = '70px';
         pagetop.style.transitionDelay = '.3s';
 

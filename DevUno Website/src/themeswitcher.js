@@ -29,13 +29,21 @@ function themeSwitch(){
 
     //add elements that need theme changing here
 
-    //adding gradient1 id and gradient2 id transition
+    //adding gradient section transitions
         document.getElementById('gradient1').style.opacity = '0';
         document.getElementById('gradient2').style.opacity = '100';
+
+        document.getElementById('gradient3dark').style.opacity = '100';
+        document.getElementById('gradient3light').style.opacity = '0';
 
     //changing color of welcomeMessage text
         document.getElementById('welcomeMessage').style.color = '#e0f2f2';
         document.getElementById('welcomeMessageh2').style.color = '#9babab';
+
+    //changing color of whatWeDo
+        document.getElementById('whatWeDo').style.color = '#e0f2f2';
+        document.getElementById('whatWeDoLi').style.color = '#e0f2f2';
+
 
 //turns the value of the button to off
     document.getElementById('themeButton').value = 'off'
@@ -70,13 +78,20 @@ else{
 
     //add elements that need theme changing here
 
-    //adding gradient1 id and gradient2 id transition
+    //adding gradient transitions
         document.getElementById('gradient1').style.opacity = '100';
         document.getElementById('gradient2').style.opacity = '0';
+
+        document.getElementById('gradient3dark').style.opacity = '0';
+        document.getElementById('gradient3light').style.opacity = '100';
 
         //changing color of welcomeMessage text
             document.getElementById('welcomeMessage').style.color = '#3e3e3e';
             document.getElementById('welcomeMessageh2').style.color = '#3e3e3e';
+
+        //changing color of whatWeDo
+                document.getElementById('whatWeDo').style.color = '#3e3e3e';
+                document.getElementById('whatWeDoLi').style.color = '#3e3e3e'
 
 
 //turns the value of the button back to on
