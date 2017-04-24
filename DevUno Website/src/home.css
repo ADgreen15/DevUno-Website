@@ -145,29 +145,39 @@ li a{
     border-bottom-color: #d7d7d7;
 }
 li a:hover{
-    border-bottom-color: rgb(160, 160, 160);
+    border-bottom-color: #9f9f9f;
 }
 
     /*Delaying the transition time for each link for a smooth effect*/
 #homeLink{
+    position: relative;
+    top: 0px;
     color: #2a2b32;
-    transition: border-bottom-color .2s,  color .1s;
+    transition: border-bottom-color .2s,  color .1s, top .5s;
 }
 #webdevLink{
+    position: relative;
+    top: 0px;
     color: #2a2b32;
-    transition: border-bottom-color .2s, color .2s;
+    transition: border-bottom-color .2s, color .2s, top .6s;
 }
 #graphicdesignLink{
+    position: relative;
+    top: 0px;
     color: #2a2b32;
-    transition: border-bottom-color .2s, color .3s;
+    transition: border-bottom-color .2s, color .3s, top .7s;
 }
 #aboutLink{
+    position: relative;
+    top: 0px;
     color: #2a2b32;
-    transition: border-bottom-color .2s, color .4s;
+    transition: border-bottom-color .2s, color .4s, top .8s;
 }
 #contactLink{
+    position: relative;
+    top: 0px;
     color: #2a2b32;
-    transition: border-bottom-color .2s, color .5s;
+    transition: border-bottom-color .2s, color .5s, top .9s;
 }
 
     /*Working with the first image transitions and the contents within this first page section*/
@@ -265,6 +275,8 @@ li a:hover{
     text-align: center;
     color: #3e3e3e;
 
+    transition: color .4s;
+
 }
 #whatWeDoLi li{
     position: relative;
@@ -278,8 +290,6 @@ li a:hover{
     font-size: 18px;
     font-weight: lighter;
     font-family: Raleway, sans-serif;
-    color: #3e3e3e;
-
 
     border-bottom: 1px solid;
     border-bottom-color: #9e9e9e;

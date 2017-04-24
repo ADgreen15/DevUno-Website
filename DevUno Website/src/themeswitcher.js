@@ -40,7 +40,7 @@ function themeSwitch(){
         document.getElementById('welcomeMessage').style.color = '#e0f2f2';
         document.getElementById('welcomeMessageh2').style.color = '#9babab';
 
-    //changing color of whatWeDo
+    //changing color of whatWeDo elements
         document.getElementById('whatWeDo').style.color = '#e0f2f2';
         document.getElementById('whatWeDoLi').style.color = '#e0f2f2';
 

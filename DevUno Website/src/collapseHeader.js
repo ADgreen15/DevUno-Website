@@ -1,9 +1,16 @@
 var
-    pagetop, logo, hrborder, headerLinks;
+    pagetop, logo, hrborder, headerLinks1;
 function yScroll(){
     pagetop = document.getElementById('mainHeader');
     logo = document.getElementById('headerImage');
-    headerLinks = document.getElementById('headerTabs');
+
+    //delaying the links rising gradually
+    headerLinks1 = document.getElementById('homeLink');
+    headerLinks2 = document.getElementById('webdevLink');
+    headerLinks3 = document.getElementById('graphicdesignLink');
+    headerLinks4 = document.getElementById('aboutLink');
+    headerLinks5 = document.getElementById('contactLink');
+
     hrborder = document.getElementById('hrBreak');
 
     if (window.pageYOffset > 150) {
@@ -13,8 +20,20 @@ function yScroll(){
         logo.style.transitionDelay = '0s';
         logo.style.marginLeft = '10%';
 
-        headerLinks.style.top = '-100px';
-        headerLinks.style.transitionDelay = '.3s';
+
+
+        headerLinks1.style.top = '-60px';
+        headerLinks1.style.transitionDelay = '.1s';
+        headerLinks2.style.top = '-60px';
+        headerLinks2.style.transitionDelay = '.1s';
+        headerLinks3.style.top = '-60px';
+        headerLinks3.style.transitionDelay = '.1s';
+        headerLinks4.style.top = '-60px';
+        headerLinks4.style.transitionDelay = '.1s';
+        headerLinks5.style.top = '-60px';
+        headerLinks5.style.transitionDelay = '.1s';
+
+
 
         hrborder.style.borderColor = 'rgba(215, 215, 215, 0.00)';
         hrborder.style.width = '15%';
@@ -27,8 +46,20 @@ function yScroll(){
         logo.style.transitionDelay = '.4s';
         logo.style.marginLeft = '46%';
 
-        headerLinks.style.top = '-40px';
-        headerLinks.style.transitionDelay = '0s';
+
+
+        headerLinks1.style.top = '0px';
+        headerLinks1.style.transitionDelay = '.1s';
+        headerLinks2.style.top = '0px';
+        headerLinks2.style.transitionDelay = '.1s';
+        headerLinks3.style.top = '0px';
+        headerLinks3.style.transitionDelay = '.1s';
+        headerLinks4.style.top = '0px';
+        headerLinks4.style.transitionDelay = '.1s';
+        headerLinks5.style.top = '0px';
+        headerLinks5.style.transitionDelay = '.1s';
+
+
 
         hrborder.style.borderColor = 'rgba(215, 215, 215, 1.00)';
         hrborder.style.width = '60%';
