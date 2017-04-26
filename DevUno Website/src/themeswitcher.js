@@ -44,6 +44,10 @@ function themeSwitch(){
         document.getElementById('whatWeDo').style.color = '#e0f2f2';
         document.getElementById('whatWeDoLi').style.color = '#e0f2f2';
 
+    //changing color of bracket elements
+        document.getElementById('bracket').style.opacity = '0';
+        document.getElementById('bracketLight').style.opacity = '100';
+
 
 //turns the value of the button to off
     document.getElementById('themeButton').value = 'off'
@@ -92,6 +96,10 @@ else{
         //changing color of whatWeDo
                 document.getElementById('whatWeDo').style.color = '#3e3e3e';
                 document.getElementById('whatWeDoLi').style.color = '#3e3e3e'
+
+        //changing color of bracket elements
+            document.getElementById('bracket').style.opacity = '100';
+            document.getElementById('bracketLight').style.opacity = '0';
 
 
 //turns the value of the button back to on

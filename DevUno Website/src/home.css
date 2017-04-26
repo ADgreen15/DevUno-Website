@@ -266,6 +266,36 @@ li a:hover{
 
     transition: color .5s;
 }
+#bracket{
+    position: relative;
+    width: 50%;
+    height: 140px;
+
+    opacity: 100;
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1060px;
+
+    transition: opacity .4s;
+}
+#bracketLight{
+    position: relative;
+    width: 50%;
+    height: 140px;
+
+    opacity: 0;
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 920px;
+
+    transition: opacity .4s;
+}
 #whatWeDoLi{
     position: absolute;
     display: inline;
