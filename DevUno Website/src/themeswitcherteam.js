@@ -52,7 +52,7 @@ function themeSwitch(){
       x[0].style.color = "#e0f2f2";
       x[1].style.color = '#e0f2f2';
       x[2].style.color = '#e0f2f2';
-      x[3].style.color = '#e0f2f2';
+
 
 
 
@@ -115,7 +115,7 @@ else{
         x[0].style.color = '#3e3e3e';
         x[1].style.color = '#3e3e3e';
         x[2].style.color = '#3e3e3e';
-        x[3].style.color = '#3e3e3e';
+
 
 
 //turns the value of the button back to on
