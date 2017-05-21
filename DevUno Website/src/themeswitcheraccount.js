@@ -1,5 +1,7 @@
 function themeSwitch(){
 
+
+
     if (document.getElementById('themeButton').value == "on") {
 
     //changing header background color and html background color
@@ -40,16 +42,13 @@ function themeSwitch(){
         document.getElementById('welcomeMessage').style.color = '#e0f2f2';
         document.getElementById('welcomeMessageh2').style.color = '#9babab';
 
-    //changing color of whatWeDo elements
-        document.getElementById('whatWeDo').style.color = '#e0f2f2';
-        document.getElementById('whatWeDoLi').style.color = '#e0f2f2';
-
-    //changing color of bracket elements
-        document.getElementById('bracket').style.opacity = '0';
-        document.getElementById('bracketLight').style.opacity = '100';
+    //changing color of whoWeAre elements
+      //  document.getElementById('whoWeAre').style.color = '#e0f2f2';
+      //  document.getElementById('bios').style.color = '#e0f2f2';
 
 
-        
+
+
 
 //turns the value of the button to off
     document.getElementById('themeButton').value = 'off'
@@ -95,17 +94,23 @@ else{
             document.getElementById('welcomeMessage').style.color = '#3e3e3e';
             document.getElementById('welcomeMessageh2').style.color = '#3e3e3e';
 
-        //changing color of whatWeDo
-                document.getElementById('whatWeDo').style.color = '#3e3e3e';
-                document.getElementById('whatWeDoLi').style.color = '#3e3e3e'
+        //changing color of whoWeAre
+        //        document.getElementById('whoWeAre').style.color = '#3e3e3e';
+          //      document.getElementById('bios').style.color = '#3e3e3e'
 
         //changing color of bracket elements
-            document.getElementById('bracket').style.opacity = '100';
-            document.getElementById('bracketLight').style.opacity = '0';
+      //      document.getElementById('bracket').style.opacity = '100';
+      //      document.getElementById('bracketLight').style.opacity = '0';
+
+
+
 
 
 //turns the value of the button back to on
     document.getElementById('themeButton').value = 'on';
     }
+
+
+
 
 }
